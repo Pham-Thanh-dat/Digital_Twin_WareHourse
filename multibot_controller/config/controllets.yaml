@@ -1,0 +1,10 @@
+multimode_controller:
+  ros__parameters:
+    # Danh sách robot namespaces cần quản lý
+    robot_namespaces:
+      - robot1
+      - robot2
+
+    # Tần số control loop (Hz)
+    # Mobile robot không cần 1kHz như arm, 50Hz là đủ
+    control_frequency: 50.0

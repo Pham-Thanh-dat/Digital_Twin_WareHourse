@@ -1,0 +1,1775 @@
+<?xml version='1.0' encoding='ASCII'?>
+<sdf version='1.7'>
+  <world name='warehouse_layout2'>
+    <physics type="ode">
+      <max_step_size>0.006</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin name='ignition::gazebo::systems::Physics' filename='libignition-gazebo-physics-system.so'/>
+    <plugin name='ignition::gazebo::systems::UserCommands' filename='libignition-gazebo-user-commands-system.so'/>
+    <plugin name='ignition::gazebo::systems::SceneBroadcaster' filename='libignition-gazebo-scene-broadcaster-system.so'/>
+    <plugin name='ignition::gazebo::systems::Sensors' filename='libignition-gazebo-sensors-system.so'>
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin name='ignition::gazebo::systems::Imu' filename='libignition-gazebo-imu-system.so'/>
+    <scene>
+      <ambient>1 1 1 1</ambient>
+      <background>0.3 0.7 0.9 1</background>
+      <shadows>0</shadows>
+      <grid>false</grid>
+    </scene>
+    <model name='ground_plane'>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><plane><normal>0.0 0.0 1</normal><size>1 1</size></plane></geometry>
+        </collision>
+      </link>
+      <pose>0 0 0 0 0 0</pose>
+    </model>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row0_seg0</name>
+      <pose>1.8 1.1 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row0_seg1</name>
+      <pose>5.8 1.1 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row0_seg2</name>
+      <pose>9.8 1.1 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row0_seg3</name>
+      <pose>13.8 1.1 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row0_seg4</name>
+      <pose>17.8 1.1 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row0_seg5</name>
+      <pose>21.8 1.1 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row1_seg0</name>
+      <pose>1.8 3.3000000000000003 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row1_seg1</name>
+      <pose>5.8 3.3000000000000003 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row1_seg2</name>
+      <pose>9.8 3.3000000000000003 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row1_seg3</name>
+      <pose>13.8 3.3000000000000003 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row1_seg4</name>
+      <pose>17.8 3.3000000000000003 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row1_seg5</name>
+      <pose>21.8 3.3000000000000003 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row2_seg0</name>
+      <pose>1.8 5.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row2_seg1</name>
+      <pose>5.8 5.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row2_seg2</name>
+      <pose>9.8 5.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row2_seg3</name>
+      <pose>13.8 5.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row2_seg4</name>
+      <pose>17.8 5.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row2_seg5</name>
+      <pose>21.8 5.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row4_seg0</name>
+      <pose>1.8 12.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row4_seg1</name>
+      <pose>5.8 12.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row4_seg2</name>
+      <pose>9.8 12.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row4_seg3</name>
+      <pose>13.8 12.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row4_seg4</name>
+      <pose>17.8 12.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row4_seg5</name>
+      <pose>21.8 12.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row5_seg0</name>
+      <pose>1.8 14.7 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row5_seg1</name>
+      <pose>5.8 14.7 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row5_seg2</name>
+      <pose>9.8 14.7 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row5_seg3</name>
+      <pose>13.8 14.7 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row5_seg4</name>
+      <pose>17.8 14.7 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row5_seg5</name>
+      <pose>21.8 14.7 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row6_seg0</name>
+      <pose>1.8 16.9 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row6_seg1</name>
+      <pose>5.8 16.9 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row6_seg2</name>
+      <pose>9.8 16.9 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row6_seg3</name>
+      <pose>13.8 16.9 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row6_seg4</name>
+      <pose>17.8 16.9 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_left_row6_seg5</name>
+      <pose>21.8 16.9 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row0_seg0</name>
+      <pose>29.400000000000002 1.1 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row0_seg1</name>
+      <pose>33.4 1.1 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row0_seg2</name>
+      <pose>37.4 1.1 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row0_seg3</name>
+      <pose>41.4 1.1 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row0_seg4</name>
+      <pose>45.4 1.1 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row0_seg5</name>
+      <pose>49.4 1.1 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row1_seg0</name>
+      <pose>29.400000000000002 3.3000000000000003 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row1_seg1</name>
+      <pose>33.4 3.3000000000000003 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row1_seg2</name>
+      <pose>37.4 3.3000000000000003 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row1_seg3</name>
+      <pose>41.4 3.3000000000000003 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row1_seg4</name>
+      <pose>45.4 3.3000000000000003 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row1_seg5</name>
+      <pose>49.4 3.3000000000000003 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row2_seg0</name>
+      <pose>29.400000000000002 5.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row2_seg1</name>
+      <pose>33.4 5.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row2_seg2</name>
+      <pose>37.4 5.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row2_seg3</name>
+      <pose>41.4 5.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row2_seg4</name>
+      <pose>45.4 5.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row2_seg5</name>
+      <pose>49.4 5.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row4_seg0</name>
+      <pose>29.400000000000002 12.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row4_seg1</name>
+      <pose>33.4 12.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row4_seg2</name>
+      <pose>37.4 12.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row4_seg3</name>
+      <pose>41.4 12.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row4_seg4</name>
+      <pose>45.4 12.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row4_seg5</name>
+      <pose>49.4 12.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row5_seg0</name>
+      <pose>29.400000000000002 14.7 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row5_seg1</name>
+      <pose>33.4 14.7 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row5_seg2</name>
+      <pose>37.4 14.7 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row5_seg3</name>
+      <pose>41.4 14.7 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row5_seg4</name>
+      <pose>45.4 14.7 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row5_seg5</name>
+      <pose>49.4 14.7 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row6_seg0</name>
+      <pose>29.400000000000002 16.9 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row6_seg1</name>
+      <pose>33.4 16.9 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row6_seg2</name>
+      <pose>37.4 16.9 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row6_seg3</name>
+      <pose>41.4 16.9 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row6_seg4</name>
+      <pose>45.4 16.9 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+      <name>shelf_right_row6_seg5</name>
+      <pose>49.4 16.9 0 0 0 0</pose>
+    </include>
+    <model name='inbound_belt_frame'>
+      <static>true</static>
+      <pose>11.8 9.0 0.25 0 0 0.0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>23.6 1.0 0.5</size></box></geometry>
+        </collision>
+        <visual name='visual_base'>
+          <geometry><box><size>23.6 1.0 0.5</size></box></geometry>
+          <material><ambient>0.55 0.56 0.58 1</ambient><diffuse>0.55 0.56 0.58 1</diffuse>
+            <specular>0.6 0.6 0.6 1</specular></material>
+        </visual>
+      </link>
+    </model>
+    <model name='inbound_belt_deck'>
+      <static>true</static>
+      <pose>11.8 9.0 0.775 0 0 0.0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>23.6 1.0 0.05</size></box></geometry>
+          <surface><friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction></surface>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>23.6 1.0 0.05</size></box></geometry>
+          <material><ambient>0.08 0.08 0.08 1</ambient><diffuse>0.08 0.08 0.08 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name='inbound_belt_rail_left'>
+      <static>true</static>
+      <pose>11.8 9.525 0.8400000000000001 0 0 0.0</pose>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry><box><size>23.6 0.05 0.08</size></box></geometry>
+          <material><ambient>0.75 0.55 0.1 1</ambient><diffuse>0.75 0.55 0.1 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name='inbound_belt_rail_right'>
+      <static>true</static>
+      <pose>11.8 8.475 0.8400000000000001 0 0 0.0</pose>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry><box><size>23.6 0.05 0.08</size></box></geometry>
+          <material><ambient>0.75 0.55 0.1 1</ambient><diffuse>0.75 0.55 0.1 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name='inbound_belt_roller_start'>
+      <pose>0.0 9.0 0.65 1.5708 0 0</pose>
+      <link name='roller_link'>
+        <inertial>
+          <mass>0.5</mass>
+          <inertia><ixx>0.01</ixx><iyy>0.01</iyy><izz>0.01</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry>
+          <material><ambient>0.1 0.1 0.12 1</ambient><diffuse>0.1 0.1 0.12 1</diffuse>
+            <specular>0.4 0.4 0.4 1</specular></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry>
+        </collision>
+      </link>
+      <joint name='spin_joint' type='revolute'>
+        <parent>world</parent>
+        <child>roller_link</child>
+        <axis><xyz>0 0 1</xyz><limit><lower>-1e16</lower><upper>1e16</upper></limit></axis>
+      </joint>
+      <plugin filename='libignition-gazebo-joint-controller-system.so'
+              name='ignition::gazebo::systems::JointController'>
+        <joint_name>spin_joint</joint_name>
+        <initial_velocity>6.0</initial_velocity>
+      </plugin>
+    </model>
+    <model name='inbound_belt_roller_end'>
+      <pose>23.6 9.0 0.65 1.5708 0 0</pose>
+      <link name='roller_link'>
+        <inertial>
+          <mass>0.5</mass>
+          <inertia><ixx>0.01</ixx><iyy>0.01</iyy><izz>0.01</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry>
+          <material><ambient>0.1 0.1 0.12 1</ambient><diffuse>0.1 0.1 0.12 1</diffuse>
+            <specular>0.4 0.4 0.4 1</specular></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry>
+        </collision>
+      </link>
+      <joint name='spin_joint' type='revolute'>
+        <parent>world</parent>
+        <child>roller_link</child>
+        <axis><xyz>0 0 1</xyz><limit><lower>-1e16</lower><upper>1e16</upper></limit></axis>
+      </joint>
+      <plugin filename='libignition-gazebo-joint-controller-system.so'
+              name='ignition::gazebo::systems::JointController'>
+        <joint_name>spin_joint</joint_name>
+        <initial_velocity>6.0</initial_velocity>
+      </plugin>
+    </model>
+    <model name='inbound_belt_pkg0'>
+      <pose>1.475 9.0 0.895 0 0 0.0</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='inbound_belt_pkg1'>
+      <pose>4.425000000000001 9.0 0.895 0 0 0.0</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='inbound_belt_pkg2'>
+      <pose>7.375 9.0 0.895 0 0 0.0</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='inbound_belt_pkg3'>
+      <pose>10.325000000000001 9.0 0.895 0 0 0.0</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='inbound_belt_pkg4'>
+      <pose>13.275 9.0 0.895 0 0 0.0</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='inbound_belt_pkg5'>
+      <pose>16.225 9.0 0.895 0 0 0.0</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='inbound_belt_pkg6'>
+      <pose>19.175 9.0 0.895 0 0 0.0</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='inbound_belt_pkg7'>
+      <pose>22.125 9.0 0.895 0 0 0.0</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='outbound_belt_frame'>
+      <static>true</static>
+      <pose>39.400000000000006 9.0 0.25 0 0 0.0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>23.6 1.0 0.5</size></box></geometry>
+        </collision>
+        <visual name='visual_base'>
+          <geometry><box><size>23.6 1.0 0.5</size></box></geometry>
+          <material><ambient>0.55 0.56 0.58 1</ambient><diffuse>0.55 0.56 0.58 1</diffuse>
+            <specular>0.6 0.6 0.6 1</specular></material>
+        </visual>
+      </link>
+    </model>
+    <model name='outbound_belt_deck'>
+      <static>true</static>
+      <pose>39.400000000000006 9.0 0.775 0 0 0.0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>23.6 1.0 0.05</size></box></geometry>
+          <surface><friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction></surface>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>23.6 1.0 0.05</size></box></geometry>
+          <material><ambient>0.08 0.08 0.08 1</ambient><diffuse>0.08 0.08 0.08 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name='outbound_belt_rail_left'>
+      <static>true</static>
+      <pose>39.400000000000006 9.525 0.8400000000000001 0 0 0.0</pose>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry><box><size>23.6 0.05 0.08</size></box></geometry>
+          <material><ambient>0.75 0.55 0.1 1</ambient><diffuse>0.75 0.55 0.1 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name='outbound_belt_rail_right'>
+      <static>true</static>
+      <pose>39.400000000000006 8.475 0.8400000000000001 0 0 0.0</pose>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry><box><size>23.6 0.05 0.08</size></box></geometry>
+          <material><ambient>0.75 0.55 0.1 1</ambient><diffuse>0.75 0.55 0.1 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name='outbound_belt_roller_start'>
+      <pose>27.600000000000005 9.0 0.65 1.5708 0 0</pose>
+      <link name='roller_link'>
+        <inertial>
+          <mass>0.5</mass>
+          <inertia><ixx>0.01</ixx><iyy>0.01</iyy><izz>0.01</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry>
+          <material><ambient>0.1 0.1 0.12 1</ambient><diffuse>0.1 0.1 0.12 1</diffuse>
+            <specular>0.4 0.4 0.4 1</specular></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry>
+        </collision>
+      </link>
+      <joint name='spin_joint' type='revolute'>
+        <parent>world</parent>
+        <child>roller_link</child>
+        <axis><xyz>0 0 1</xyz><limit><lower>-1e16</lower><upper>1e16</upper></limit></axis>
+      </joint>
+      <plugin filename='libignition-gazebo-joint-controller-system.so'
+              name='ignition::gazebo::systems::JointController'>
+        <joint_name>spin_joint</joint_name>
+        <initial_velocity>6.0</initial_velocity>
+      </plugin>
+    </model>
+    <model name='outbound_belt_roller_end'>
+      <pose>51.2 9.0 0.65 1.5708 0 0</pose>
+      <link name='roller_link'>
+        <inertial>
+          <mass>0.5</mass>
+          <inertia><ixx>0.01</ixx><iyy>0.01</iyy><izz>0.01</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry>
+          <material><ambient>0.1 0.1 0.12 1</ambient><diffuse>0.1 0.1 0.12 1</diffuse>
+            <specular>0.4 0.4 0.4 1</specular></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry>
+        </collision>
+      </link>
+      <joint name='spin_joint' type='revolute'>
+        <parent>world</parent>
+        <child>roller_link</child>
+        <axis><xyz>0 0 1</xyz><limit><lower>-1e16</lower><upper>1e16</upper></limit></axis>
+      </joint>
+      <plugin filename='libignition-gazebo-joint-controller-system.so'
+              name='ignition::gazebo::systems::JointController'>
+        <joint_name>spin_joint</joint_name>
+        <initial_velocity>6.0</initial_velocity>
+      </plugin>
+    </model>
+    <model name='outbound_belt_pkg0'>
+      <pose>29.075000000000006 9.0 0.895 0 0 0.0</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='outbound_belt_pkg1'>
+      <pose>32.025000000000006 9.0 0.895 0 0 0.0</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='outbound_belt_pkg2'>
+      <pose>34.97500000000001 9.0 0.895 0 0 0.0</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='outbound_belt_pkg3'>
+      <pose>37.925000000000004 9.0 0.895 0 0 0.0</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='outbound_belt_pkg4'>
+      <pose>40.87500000000001 9.0 0.895 0 0 0.0</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='outbound_belt_pkg5'>
+      <pose>43.825 9.0 0.895 0 0 0.0</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='outbound_belt_pkg6'>
+      <pose>46.775000000000006 9.0 0.895 0 0 0.0</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='outbound_belt_pkg7'>
+      <pose>49.72500000000001 9.0 0.895 0 0 0.0</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='west_belt_frame'>
+      <static>true</static>
+      <pose>-3.0 9.0 0.25 0 0 1.5708</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>18.0 1.0 0.5</size></box></geometry>
+        </collision>
+        <visual name='visual_base'>
+          <geometry><box><size>18.0 1.0 0.5</size></box></geometry>
+          <material><ambient>0.55 0.56 0.58 1</ambient><diffuse>0.55 0.56 0.58 1</diffuse>
+            <specular>0.6 0.6 0.6 1</specular></material>
+        </visual>
+      </link>
+    </model>
+    <model name='west_belt_deck'>
+      <static>true</static>
+      <pose>-3.0 9.0 0.775 0 0 1.5708</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>18.0 1.0 0.05</size></box></geometry>
+          <surface><friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction></surface>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>18.0 1.0 0.05</size></box></geometry>
+          <material><ambient>0.08 0.08 0.08 1</ambient><diffuse>0.08 0.08 0.08 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name='west_belt_rail_left'>
+      <static>true</static>
+      <pose>-3.5249999999964583 8.99999807156732 0.8400000000000001 0 0 1.5708</pose>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry><box><size>18.0 0.05 0.08</size></box></geometry>
+          <material><ambient>0.75 0.55 0.1 1</ambient><diffuse>0.75 0.55 0.1 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name='west_belt_rail_right'>
+      <static>true</static>
+      <pose>-2.4750000000035417 9.00000192843268 0.8400000000000001 0 0 1.5708</pose>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry><box><size>18.0 0.05 0.08</size></box></geometry>
+          <material><ambient>0.75 0.55 0.1 1</ambient><diffuse>0.75 0.55 0.1 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name='west_belt_roller_start'>
+      <pose>-2.99996694115407 6.071587677070056e-11 0.65 1.5708 0 0</pose>
+      <link name='roller_link'>
+        <inertial>
+          <mass>0.5</mass>
+          <inertia><ixx>0.01</ixx><iyy>0.01</iyy><izz>0.01</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry>
+          <material><ambient>0.1 0.1 0.12 1</ambient><diffuse>0.1 0.1 0.12 1</diffuse>
+            <specular>0.4 0.4 0.4 1</specular></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry>
+        </collision>
+      </link>
+      <joint name='spin_joint' type='revolute'>
+        <parent>world</parent>
+        <child>roller_link</child>
+        <axis><xyz>0 0 1</xyz><limit><lower>-1e16</lower><upper>1e16</upper></limit></axis>
+      </joint>
+      <plugin filename='libignition-gazebo-joint-controller-system.so'
+              name='ignition::gazebo::systems::JointController'>
+        <joint_name>spin_joint</joint_name>
+        <initial_velocity>6.0</initial_velocity>
+      </plugin>
+    </model>
+    <model name='west_belt_roller_end'>
+      <pose>-3.00003305884593 17.999999999939284 0.65 1.5708 0 0</pose>
+      <link name='roller_link'>
+        <inertial>
+          <mass>0.5</mass>
+          <inertia><ixx>0.01</ixx><iyy>0.01</iyy><izz>0.01</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry>
+          <material><ambient>0.1 0.1 0.12 1</ambient><diffuse>0.1 0.1 0.12 1</diffuse>
+            <specular>0.4 0.4 0.4 1</specular></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry>
+        </collision>
+      </link>
+      <joint name='spin_joint' type='revolute'>
+        <parent>world</parent>
+        <child>roller_link</child>
+        <axis><xyz>0 0 1</xyz><limit><lower>-1e16</lower><upper>1e16</upper></limit></axis>
+      </joint>
+      <plugin filename='libignition-gazebo-joint-controller-system.so'
+              name='ignition::gazebo::systems::JointController'>
+        <joint_name>spin_joint</joint_name>
+        <initial_velocity>6.0</initial_velocity>
+      </plugin>
+    </model>
+    <model name='west_belt_pkg0'>
+      <pose>-2.999971073509811 1.1250000000531264 0.895 0 0 1.5708</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='west_belt_pkg1'>
+      <pose>-2.999979338221294 3.3750000000379474 0.895 0 0 1.5708</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='west_belt_pkg2'>
+      <pose>-2.999987602932776 5.6250000000227685 0.895 0 0 1.5708</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='west_belt_pkg3'>
+      <pose>-2.999995867644259 7.8750000000075895 0.895 0 0 1.5708</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='west_belt_pkg4'>
+      <pose>-3.000004132355741 10.124999999992411 0.895 0 0 1.5708</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='west_belt_pkg5'>
+      <pose>-3.000012397067224 12.37499999997723 0.895 0 0 1.5708</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='west_belt_pkg6'>
+      <pose>-3.000020661778706 14.624999999962053 0.895 0 0 1.5708</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='west_belt_pkg7'>
+      <pose>-3.000028926490189 16.874999999946873 0.895 0 0 1.5708</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='east_belt_frame'>
+      <static>true</static>
+      <pose>54.2 9.0 0.25 0 0 1.5708</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>18.0 1.0 0.5</size></box></geometry>
+        </collision>
+        <visual name='visual_base'>
+          <geometry><box><size>18.0 1.0 0.5</size></box></geometry>
+          <material><ambient>0.55 0.56 0.58 1</ambient><diffuse>0.55 0.56 0.58 1</diffuse>
+            <specular>0.6 0.6 0.6 1</specular></material>
+        </visual>
+      </link>
+    </model>
+    <model name='east_belt_deck'>
+      <static>true</static>
+      <pose>54.2 9.0 0.775 0 0 1.5708</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>18.0 1.0 0.05</size></box></geometry>
+          <surface><friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction></surface>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>18.0 1.0 0.05</size></box></geometry>
+          <material><ambient>0.08 0.08 0.08 1</ambient><diffuse>0.08 0.08 0.08 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name='east_belt_rail_left'>
+      <static>true</static>
+      <pose>53.67500000000354 8.99999807156732 0.8400000000000001 0 0 1.5708</pose>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry><box><size>18.0 0.05 0.08</size></box></geometry>
+          <material><ambient>0.75 0.55 0.1 1</ambient><diffuse>0.75 0.55 0.1 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name='east_belt_rail_right'>
+      <static>true</static>
+      <pose>54.72499999999646 9.00000192843268 0.8400000000000001 0 0 1.5708</pose>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry><box><size>18.0 0.05 0.08</size></box></geometry>
+          <material><ambient>0.75 0.55 0.1 1</ambient><diffuse>0.75 0.55 0.1 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name='east_belt_roller_start'>
+      <pose>54.20003305884593 6.071587677070056e-11 0.65 1.5708 0 0</pose>
+      <link name='roller_link'>
+        <inertial>
+          <mass>0.5</mass>
+          <inertia><ixx>0.01</ixx><iyy>0.01</iyy><izz>0.01</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry>
+          <material><ambient>0.1 0.1 0.12 1</ambient><diffuse>0.1 0.1 0.12 1</diffuse>
+            <specular>0.4 0.4 0.4 1</specular></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry>
+        </collision>
+      </link>
+      <joint name='spin_joint' type='revolute'>
+        <parent>world</parent>
+        <child>roller_link</child>
+        <axis><xyz>0 0 1</xyz><limit><lower>-1e16</lower><upper>1e16</upper></limit></axis>
+      </joint>
+      <plugin filename='libignition-gazebo-joint-controller-system.so'
+              name='ignition::gazebo::systems::JointController'>
+        <joint_name>spin_joint</joint_name>
+        <initial_velocity>6.0</initial_velocity>
+      </plugin>
+    </model>
+    <model name='east_belt_roller_end'>
+      <pose>54.199966941154074 17.999999999939284 0.65 1.5708 0 0</pose>
+      <link name='roller_link'>
+        <inertial>
+          <mass>0.5</mass>
+          <inertia><ixx>0.01</ixx><iyy>0.01</iyy><izz>0.01</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry>
+          <material><ambient>0.1 0.1 0.12 1</ambient><diffuse>0.1 0.1 0.12 1</diffuse>
+            <specular>0.4 0.4 0.4 1</specular></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><cylinder><radius>0.15</radius><length>1.0</length></cylinder></geometry>
+        </collision>
+      </link>
+      <joint name='spin_joint' type='revolute'>
+        <parent>world</parent>
+        <child>roller_link</child>
+        <axis><xyz>0 0 1</xyz><limit><lower>-1e16</lower><upper>1e16</upper></limit></axis>
+      </joint>
+      <plugin filename='libignition-gazebo-joint-controller-system.so'
+              name='ignition::gazebo::systems::JointController'>
+        <joint_name>spin_joint</joint_name>
+        <initial_velocity>6.0</initial_velocity>
+      </plugin>
+    </model>
+    <model name='east_belt_pkg0'>
+      <pose>54.20002892649019 1.1250000000531264 0.895 0 0 1.5708</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='east_belt_pkg1'>
+      <pose>54.20002066177871 3.3750000000379474 0.895 0 0 1.5708</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='east_belt_pkg2'>
+      <pose>54.200012397067226 5.6250000000227685 0.895 0 0 1.5708</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='east_belt_pkg3'>
+      <pose>54.200004132355744 7.8750000000075895 0.895 0 0 1.5708</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='east_belt_pkg4'>
+      <pose>54.19999586764426 10.124999999992411 0.895 0 0 1.5708</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='east_belt_pkg5'>
+      <pose>54.19998760293278 12.37499999997723 0.895 0 0 1.5708</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='east_belt_pkg6'>
+      <pose>54.1999793382213 14.624999999962053 0.895 0 0 1.5708</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='east_belt_pkg7'>
+      <pose>54.199971073509815 16.874999999946873 0.895 0 0 1.5708</pose>
+      <link name='box_link'>
+        <inertial><mass>0.2</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <visual name='visual_body'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <material><ambient>0.72 0.52 0.28 1</ambient><diffuse>0.72 0.52 0.28 1</diffuse></material>
+        </visual>
+        <visual name='visual_strap'>
+          <pose>0 0 0.076 0 0 0</pose>
+          <geometry><box><size>0.3 0.045 0.002</size></box></geometry>
+          <material><ambient>0.35 0.22 0.1 1</ambient><diffuse>0.35 0.22 0.1 1</diffuse></material>
+        </visual>
+        <collision name='collision'>
+          <geometry><box><size>0.3 0.3 0.15</size></box></geometry>
+          <surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface>
+        </collision>
+      </link>
+      <plugin filename='libignition-gazebo-velocity-control-system.so'
+              name='ignition::gazebo::systems::VelocityControl'>
+        <link_name>box_link</link_name>
+      </plugin>
+    </model>
+    <model name='goal_zone_robot1'>
+      <static>true</static>
+      <pose>25.6 1.1 0.005 0 0 0</pose>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry><box><size>1.0 1.0 0.005</size></box></geometry>
+          <material>
+            <ambient>1.0 0.2 0.2 0.8</ambient>
+            <diffuse>1.0 0.2 0.2 0.8</diffuse>
+            <emissive>0.3 0.06 0.06 1</emissive>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name='goal_zone_robot2'>
+      <static>true</static>
+      <pose>25.6 3.3000000000000003 0.005 0 0 0</pose>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry><box><size>1.0 1.0 0.005</size></box></geometry>
+          <material>
+            <ambient>0.2 0.5 1.0 0.8</ambient>
+            <diffuse>0.2 0.5 1.0 0.8</diffuse>
+            <emissive>0.06 0.15 0.3 1</emissive>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name='goal_zone_robot3'>
+      <static>true</static>
+      <pose>25.6 5.5 0.005 0 0 0</pose>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry><box><size>1.0 1.0 0.005</size></box></geometry>
+          <material>
+            <ambient>1.0 0.8 0.0 0.8</ambient>
+            <diffuse>1.0 0.8 0.0 0.8</diffuse>
+            <emissive>0.3 0.24 0.0 1</emissive>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name='goal_zone_robot5'>
+      <static>true</static>
+      <pose>25.6 12.5 0.005 0 0 0</pose>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry><box><size>1.0 1.0 0.005</size></box></geometry>
+          <material>
+            <ambient>0.8 0.2 0.8 0.8</ambient>
+            <diffuse>0.8 0.2 0.8 0.8</diffuse>
+            <emissive>0.24 0.06 0.24 1</emissive>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name='goal_zone_robot6'>
+      <static>true</static>
+      <pose>25.6 14.7 0.005 0 0 0</pose>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry><box><size>1.0 1.0 0.005</size></box></geometry>
+          <material>
+            <ambient>0.2 0.8 0.8 0.8</ambient>
+            <diffuse>0.2 0.8 0.8 0.8</diffuse>
+            <emissive>0.06 0.24 0.24 1</emissive>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name='goal_zone_robot7'>
+      <static>true</static>
+      <pose>25.6 16.9 0.005 0 0 0</pose>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry><box><size>1.0 1.0 0.005</size></box></geometry>
+          <material>
+            <ambient>0.8 0.8 0.2 0.8</ambient>
+            <diffuse>0.8 0.8 0.2 0.8</diffuse>
+            <emissive>0.24 0.24 0.06 1</emissive>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name='wall_south'>
+      <static>true</static>
+      <pose>30.150000000000006 -3.0 1.25 0 0 0.0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>73.30000000000001 0.2 2.5</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>73.30000000000001 0.2 2.5</size></box></geometry>
+          <material><ambient>0.6 0.6 0.6 1</ambient><diffuse>0.6 0.6 0.6 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name='wall_north'>
+      <static>true</static>
+      <pose>30.150000000000006 21.0 1.25 0 0 0.0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>73.30000000000001 0.2 2.5</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>73.30000000000001 0.2 2.5</size></box></geometry>
+          <material><ambient>0.6 0.6 0.6 1</ambient><diffuse>0.6 0.6 0.6 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name='wall_west'>
+      <static>true</static>
+      <pose>-6.5 9.0 1.25 0 0 1.5708</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>24.0 0.2 2.5</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>24.0 0.2 2.5</size></box></geometry>
+          <material><ambient>0.6 0.6 0.6 1</ambient><diffuse>0.6 0.6 0.6 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name='wall_east'>
+      <static>true</static>
+      <pose>66.80000000000001 9.0 1.25 0 0 1.5708</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>24.0 0.2 2.5</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>24.0 0.2 2.5</size></box></geometry>
+          <material><ambient>0.6 0.6 0.6 1</ambient><diffuse>0.6 0.6 0.6 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

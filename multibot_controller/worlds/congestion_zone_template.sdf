@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="ZONE_NAME_PLACEHOLDER">
+    <static>true</static>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <cylinder>
+            <radius>ZONE_RADIUS_PLACEHOLDER</radius>
+            <length>0.15</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>1 0 0 0.5</ambient>
+          <diffuse>1 0 0 0.5</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0.3 0 0 1</emissive>
+        </material>
+        <transparency>0.5</transparency>
+      </visual>
+      <!-- KHONG co the <collision> -> vung nay chi de nhin, khong can vat ly,
+           robot se khong bi dam vao no ve mat vat ly (chi bi APF repulsion day ra
+           theo du lieu tu /congestion_zones, khong lien quan gi toi model nay) -->
+    </link>
+  </model>
+</sdf>
