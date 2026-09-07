@@ -1,0 +1,10 @@
+# Request: khai bao hoac xoa 1 vung tac nghen
+string zone_id          # id duy nhat, dung de sau nay xoa dung vung nay
+float64 x
+float64 y
+float64 radius
+bool clear              # true = xoa vung co zone_id nay, false = them/cap nhat vung moi
+---
+# Response
+bool success
+string message
